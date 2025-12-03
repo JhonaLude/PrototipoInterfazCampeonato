@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Equipos 2025 - Liga Pro</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-6 md:px-10 lg:px-20 py-4 bg-white dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10">
+        <div class="flex items-center gap-4 text-primary">
+          <div class="size-6">
+            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Liga Pro
+            Ecuabet</h2>
+        </div>
+        <nav class="hidden md:flex flex-1 justify-center gap-8">
+          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+            href="#">Inicio</a>
+          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+            href="#">Partidos</a>
+          <a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Equipos</a>
+          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+            href="#">Noticias</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+            <span class="truncate">Login</span>
+          </button>
+        </div>
+      </header>
+      <main class="px-6 md:px-10 lg:px-20 py-10 flex flex-1 justify-center">
+        <div class="layout-content-container flex flex-col w-full max-w-7xl flex-1 gap-8">
+          <div class="flex flex-col gap-4">
+            <p class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Equipos 2025
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">Explora los 16 equipos que competirán en la Liga Pro Ecuabet
+              esta temporada.</p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex-grow">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div
+                  class="flex w-full flex-1 items-stretch rounded-xl h-full bg-white dark:bg-background-dark/50 ring-1 ring-gray-200 dark:ring-gray-800 focus-within:ring-2 focus-within:ring-primary">
+                  <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center pl-4">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal"
+                    placeholder="Buscar equipo..." value="" />
+                </div>
+              </label>
+            </div>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-background-dark/50 ring-1 ring-gray-200 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 px-4">
+                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Filtrar por Ciudad</p>
+                <span class="material-symbols-outlined text-gray-500 dark:text-gray-400">expand_more</span>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary px-4 font-semibold">
+                <p class="text-sm leading-normal">Todas</p>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-background-dark/50 ring-1 ring-gray-200 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 px-4">
+                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Quito</p>
+              </button>
+              <button
+                class="flex h-12 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-background-dark/50 ring-1 ring-gray-200 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 px-4">
+                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Guayaquil</p>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Barcelona SC"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Barcelona SC</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Guayaquil - Estadio
+                  Monumental</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club CS Emelec"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EWV2Jlqg4Jp12xPHGFtcmmAIf6T9vRoCMHUycfhOgN3wVax8pzDv1mNkWbPYX7AFeMyyVeuUlZJzKrp2iO9BJ5MvVaJJlQm5YmuJqg_XgyT7cNNn3mvACgT-91P66qmqw1p5ZSe5ifqJ78aYjnVKKE36M2V7M81TNmDzOXpKAwzjnswzPQRxucmANSE/s16000/Club%20Sport%20Emelec.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">CS Emelec</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Guayaquil - Estadio
+                  George Capwell</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club LDU Quito"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">LDU Quito</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Quito - Estadio Rodrigo
+                  Paz Delgado</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Independiente del Valle"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8rZzGq-J7PDTGhp56c2k2Fd1h551nbcPu6OM6zJ55d6mkR4JyyGy51_xzBIzO9ZdSwuGc4nkRU6kvIve6CxRU4va5f5b-W3j8S9zB2L6J4IR2v2wmCL7VcPmi7U80MmRB9m8DEBTb6fWFn_CebUbT4vYvgMebFsflLHaJY4weRcel0zai0rBgiJ9Z/s16000/Independiente%20del%20Valle.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Independiente del Valle</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Sangolquí - Estadio Banco
+                  Guayaquil</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Aucas"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyyJrbKvxU7LVyrzB1dmv_-dCSiQu_l6TtTMWUxXUEPYxW3L0QyyyLizmMchUQYkhBGuJUO8MwdaXwrayHenUz5a_bWbpsTf39FJDNBeIgJGOGpzbaEvvjN98ZjPBoKkOQexd1EJUbS0E/s1600/Sociedad+Deportiva+Aucas.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Aucas</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Quito - Estadio Gonzalo
+                  Pozo Ripalda</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Delfín SC"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyN_3LDEkfPxA_y-_lacbYQtLrfHqQJLMuDnFP7GTvKq9wCdVHV17-ykbGUlpSltFif1DAKKjKGsDHYdH7TuCiD_sjFOAQjIwnF5wafxNJZxEKx-_Th4N4hi87g9zXNMnMKV4wXX7LR4PymZvuKVUSNtLjVulBo0Q5-50raY3giUdjOOgHKZgVNHWX/s16000/Delf%C3%ADn%20Sporting%20Club.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Delfín SC</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Manta - Estadio Jocay</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club El Nacional"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyY_Tth5Hi-ditS7yKm-NURcZSZq0H3FZQmpKH25BtcSK8_3rKv5v0rUDr5wMP9FEF3WRZ_Z0IrosY8dTXoF622NPxO31lhDijaTi2YXLPpW8PF9zeU2iyXVktYtMoh2yn06xEaVVlwZiyf0o1izheZDZIDqT-56EFfY7VrZY6sTt3oXaJ_LRy9vaQ4fk/s16000/CD%20El%20Nacional.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">El Nacional</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Quito - Estadio Olímpico
+                  Atahualpa</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Universidad Católica"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCuUJIhX-ccoKjY_cqNcI3ehxDlEHFRMk8j84H0r6yAoerrsvBXWQZaDK8GxyJc2lVnacXUuHqZ7MCu9-xSRMj4QuDPKofu8JfI90gm2HDeTJwOBMGl2qPP_bRvlTKP1rMX7RKXfBcpd0/s1600/Universidad+Catolica.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Universidad Católica</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Quito - Estadio Olímpico
+                  Atahualpa</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Técnico Universitario"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXb6_2NfMtaupZovQ5979-z_v_H7RHuquIgiNhR4AwXpGo1ZgY9sfof3rrMy-MLD1MbjHcJPSLefQwl50__0hvMV0ihh-b8S82tETZK6skt87XjTgnaBYMHjaTRdYDpbXWkIHyJn3nifmrJ2foLtR49nibBD-9mg3zccFHPmHy-8lUUgRxU1llGOr1V6M/s16000/T%C3%A9cnico%20Universitario.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Técnico Universitario</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Ambato - Estadio
+                  Bellavista</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Mushuc Runa"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQLOQv7hirVa4J_zpCPyol0E__x_jrMqhljZNW_38hd9HsKbjhJbV432hF8npV4SSXRl1QrkzmTJByorhkZkmjiN5Fa-Bd2EiR-Y82IOxK9M8WHyXGS0W89b8GWZv7iDyp7bEukqkgO54/s1600/Mushuc.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Mushuc Runa</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Ambato - Estadio COAC
+                  Mushuc Runa</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Deportivo Cuenca"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiExAeZbQ0Had0hMzFB0iCUe1_r0KAH45fIdW0iDwCr50q3EnJ4aXq2ayIAj0tEfS9lN8jcYuzQsDIpK7mxYviUoIquWnNsuij99ESV-4YDjKobJGu_ZDTf9BjCGlhyzkdrEPCCJEclmi-SO0QFEjxgVo0T_R0PF3WGrbmSHE-RPWnnMzaGGn6yZqvG/s16000/Club%20Deportivo%20Cuenca.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Deportivo Cuenca</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Cuenca - Estadio A.
+                  Serrano Aguilar</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Orense SC"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha5mQfekZxcy2kNTy5WYAliiEdZLsVsBLDUIzYcuTT7x3tvm0JV2_q9vG7l5N4_U_nF8KpwWSiXcakmt1tVIjNL31Z3kDSmAST-owbRudr8uSVPV6xsmXBp9XG1KHuu2K6Dkrkx3dc-36U_-J03iaI_Vua_3S-YUz8m2MCmO4g9K1qRercbFClTrY30sA/s16000/Orense%20Sporting%20Club.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Orense SC</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Machala - Estadio 9 de
+                  Mayo</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Vinotinto del Ecuador Fútbol Club"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM9JueNjQ4hH46kLtyc0ZAHupEm4R-iv5_7-zZ-RxwdeKm6G44skbafdaM99YEVjBun-ZYQSVAUPGeEc8x1ftm9L2_oELUmjHm5cCFAmHETDtf5onJI73ThLlA03x0gTspW1K3pfsqOh0dz0cpkf8AyNQ7nehMVXYELCnHUFP0h64BVJ4btcJI9ZkKvwg/s16000/Vinotinto%20del%20Ecuador%20FC.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Vinotinto del Ecuador Fútbol
+                  Club</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Quito - Estadio Olímpico
+                  Atahualpa</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Macará"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmgEkL0CU2cwJispHgV8mgrReRudxH9BdXAW4rPj1dQbbTzLYz2DcwLnUDg_uEKJ-ry9r0Vnn8wifx8tNkQ9letFRYaW_GssgQyC6kXKUlVJplBp2bjP3dy0c0yL42NrYaAXugE11PlNQ/s1600/Club+Social+y+Deportivo+Macara.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Macará</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Ambato - Estadio
+                  Bellavista</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Manta FC"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzzj5xWYN4fWbGKUuYN_GEAe0j2XhI2lkC4ah8Y7Fc2q3CnzzVaibBC0fqfrqREz0cMvFUrcPdYMQwX7OMahyJgwRU4qxDvM8VeQTdw-woq0pVWbVZ2BxWH2mV7M-aUoSce80-jqDobuLdZOJAgz0esvP4QyPyYvhRMB6eBoJyA2OEQEU__Lb1M2oBLQc/s16000/Manta%20FC.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Manta FC</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Ibarra - Estadio Olímpico
+                  de Ibarra</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 ring-1 ring-gray-200 dark:ring-gray-800 transition-all hover:shadow-lg hover:ring-primary/50 dark:hover:ring-primary/50">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-lg"
+                data-alt="Escudo del club Libertad FC"
+                style='background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihXVitUxPmF-LAiTTkeKBjcaOtFjmtLqWN7H7DRklkLKizH0o-Ti6V-AqTOXIWshr6Od4d8EgTzyNetbWvxDAIvLT_wPE-PvTpP3yMcSLGqaL7bxYLIwDGVY_IzuDG4RvSDg-zKQxm61w/s16000/Libertad+Futbol+Club.png");'>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#111418] dark:text-white text-lg font-bold leading-normal">Libertad FC</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Loja - Estadio Reina del
+                  Cisne</p>
+              </div>
+              <button
+                class="flex w-full items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Ver
+                Detalles</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

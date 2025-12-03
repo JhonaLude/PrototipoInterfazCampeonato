@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Estadísticas 2025</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display">
+    <div
+        class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col w-full max-w-6xl px-4 flex-1">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 sm:px-10 py-3 bg-white dark:bg-background-dark rounded-xl shadow-sm">
+                        <div class="flex items-center gap-4 text-gray-800 dark:text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_535)">
+                                        <path clip-rule="evenodd"
+                                            d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_6_535">
+                                            <rect fill="white" height="48" width="48"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">LigaPro Ecuabet</h2>
+                        </div>
+                        <div class="hidden sm:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#">Inicio</a>
+                                <a class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#">Calendario</a>
+                                <a class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#">Equipos</a>
+                                <a class="text-primary dark:text-primary text-sm font-bold leading-normal"
+                                    href="#">Estadísticas</a>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <span class="truncate">Login</span>
+                            </button>
+                        </div>
+                        <button class="sm:hidden p-2 rounded-md text-gray-800 dark:text-gray-300">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </header>
+                    <main class="flex flex-col gap-8 mt-8">
+                        <div class="flex flex-wrap justify-between gap-3 p-4">
+                            <p
+                                class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">
+                                Estadísticas - LigaPro Ecuabet 2025</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+                            <div
+                                class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-gray-800 dark:text-gray-300 text-base font-medium leading-normal">Goles
+                                    Totales</p>
+                                <p
+                                    class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">
+                                    342</p>
+                                <p
+                                    class="text-green-600 dark:text-green-500 text-sm font-medium leading-normal flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">trending_up</span>+5.2%
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-gray-800 dark:text-gray-300 text-base font-medium leading-normal">
+                                    Partidos Jugados</p>
+                                <p
+                                    class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">
+                                    120</p>
+                                <p
+                                    class="text-green-600 dark:text-green-500 text-sm font-medium leading-normal flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">trending_up</span>+1.5%
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-gray-800 dark:text-gray-300 text-base font-medium leading-normal">
+                                    Tarjetas Totales</p>
+                                <p
+                                    class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">
+                                    512</p>
+                                <p
+                                    class="text-red-600 dark:text-red-500 text-sm font-medium leading-normal flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">trending_down</span>-2.1%
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-gray-800 dark:text-gray-300 text-base font-medium leading-normal">
+                                    Promedio Goles/Partido</p>
+                                <p
+                                    class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">
+                                    2.85</p>
+                                <p
+                                    class="text-green-600 dark:text-green-500 text-sm font-medium leading-normal flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">trending_up</span>+3.0%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="flex flex-col">
+                                <h2
+                                    class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">sports_soccer</span>Tabla de
+                                    Goleadores
+                                </h2>
+                                <div class="px-4 py-3 @container">
+                                    <div
+                                        class="flex overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                        <table class="flex-1 w-full">
+                                            <thead>
+                                                <tr class="bg-white dark:bg-gray-800/50">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-12 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">
+                                                        Jugador</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-24 text-sm font-medium leading-normal text-center">
+                                                        Goles</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        1</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Jorge Valencia Ángulo"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/653779-1739903603.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Jorge Valencia Ángulo</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Manta FC</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        21</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        2</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Claudio Spinelli"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/504882-1739212518.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Claudio Spinelli</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Independiente del Valle</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        19</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        3</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Rafael Monti"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/732443-1739394247.png?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Rafael Monti</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Vinotinto</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        14</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <h2
+                                    class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">assistant</span>Tabla de
+                                    Asistencias
+                                </h2>
+                                <div class="px-4 py-3 @container">
+                                    <div
+                                        class="flex overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                        <table class="flex-1 w-full">
+                                            <thead>
+                                                <tr class="bg-white dark:bg-gray-800/50">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-12 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">
+                                                        Jugador</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-24 text-sm font-medium leading-normal text-center">
+                                                        Asist.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        1</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Jonnathan Mina"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/680511-1739817286.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Jonnathan Mina</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Aucas</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        12</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        2</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Alejandro Tobar"
+                                                                src="https://img.a.transfermarkt.technology/portrait/header/491627-1740587808.png?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Alejandro Tobar</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Deportivo Cuenca</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        11</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        3</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Christian Alemán"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/263792-1739902462.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Christian Alemán</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Manta FC</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="flex flex-col">
+                                <h2
+                                    class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">pan_tool</span>Valla Invicta
+                                </h2>
+                                <div class="px-4 py-3 @container">
+                                    <div
+                                        class="flex overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                        <table class="flex-1 w-full">
+                                            <thead>
+                                                <tr class="bg-white dark:bg-gray-800/50">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-12 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">
+                                                        Portero</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-24 text-sm font-medium leading-normal text-center">
+                                                        Partidos</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        1</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Alexander Domínguez"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/84310-1755013100.png?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Alexander Domínguez</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">LDU
+                                                                    Quito</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        15</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        2</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Ignacio de Arruabarrena"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/367651-1692977383.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Ignacio de Arruabarrena</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Barcelona SC</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        12</td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        3</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Pedro Ortiz"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/430042-1718914890.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Pedro Ortiz</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Emelec</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        11</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <h2
+                                    class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">style</span>Disciplina
+                                </h2>
+                                <div class="px-4 py-3 @container">
+                                    <div
+                                        class="flex overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                        <table class="flex-1 w-full">
+                                            <thead>
+                                                <tr class="bg-white dark:bg-gray-800/50">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-12 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">
+                                                        Jugador</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-gray-800 dark:text-gray-300 w-24 text-sm font-medium leading-normal text-center">
+                                                        Tarjetas</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        1</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Ricardo Adé"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/278145-1755014221.png?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Ricardo Adé</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">LDU
+                                                                    Quito</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        <div class="flex items-center justify-center gap-2">
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-yellow-400"></span>10</span>
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-red-600"></span>2</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        2</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Moisés Corozo"
+                                                                src="https://img.a.transfermarkt.technology/portrait/big/s_249621_3348_2012_1.jpg?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Moisés Corozo</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Mushuc Runa</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        <div class="flex items-center justify-center gap-2">
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-yellow-400"></span>9</span>
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-red-600"></span>1</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal text-center">
+                                                        3</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="size-10 rounded-full object-cover"
+                                                                data-alt="Bruno Piñatares"
+                                                                src="https://img.a.transfermarkt.technology/portrait/header/202217-1738202556.JPG?lm=1" />
+                                                            <div>
+                                                                <p class="font-semibold">Bruno Piñatares</p>
+                                                                <p class="text-xs text-gray-500 dark:text-gray-400">
+                                                                    Barcelona SC</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-gray-900 dark:text-white text-sm font-bold leading-normal text-center">
+                                                        <div class="flex items-center justify-center gap-2">
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-yellow-400"></span>12</span>
+                                                            <span class="inline-flex items-center gap-1.5"><span
+                                                                    class="h-4 w-3 bg-red-600"></span>0</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
