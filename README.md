@@ -9,21 +9,20 @@ Página web que muestra la información relevante del Campeonato Nacional de Fú
 
 
 **2. Arquitectura del Sistema**
-
+   
 **2.1 Tecnologías Utilizadas**
 
-* Frontend: HTML5, CSS3, JavaScript
-* Paradigma: Cliente único (prototipo estático)
-* Almacenamiento: LocalStorage (temporal)
+* Frontend: HTML5, CSS3
+     
+* JavaScript: Mínimo o nulo (solo para navegación entre vistas)
+     
+* Tipo: Prototipo estático/mockup interactivo
+     
+* Propósito: Validación de diseño UX/UI
 
 
 
 **2.2 Estructura del Proyecto**
-
-
-
-
-
 
     
     PrototipoInterfazCampeonato/    
@@ -47,20 +46,6 @@ Página web que muestra la información relevante del Campeonato Nacional de Fú
                ├── inicio.html
            
                └── tablaPosiciones.html
-
-
-
-**3. Arquitectura del Sistema**
-   
-**3.1 Tecnologías Utilizadas**
-
-* Frontend: HTML5, CSS3
-     
-* JavaScript: Mínimo o nulo (solo para navegación entre vistas)
-     
-* Tipo: Prototipo estático/mockup interactivo
-     
-* Propósito: Validación de diseño UX/UI
 
 
    
