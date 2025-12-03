@@ -1,16 +1,16 @@
-PrototipoInterfazCampeonato
+**PrototipoInterfazCampeonato**
 
 
 
-1. Descripción General
+**1. Descripción General**
 
 Página web que muestra la información relevante del Campeonato Nacional de Fútbol Ecuatoriano (LigaPro Ecuabet).
 
 
 
-2. Arquitectura del Sistema
+**2. Arquitectura del Sistema**
 
-2.1 Tecnologías Utilizadas
+**2.1 Tecnologías Utilizadas**
 
 * Frontend: HTML5, CSS3, JavaScript
 * Paradigma: Cliente único (prototipo estático)
@@ -18,55 +18,56 @@ Página web que muestra la información relevante del Campeonato Nacional de Fú
 
 
 
-2.2 Estructura del Proyecto
-
-PrototipoInterfazCampeonato/
+**2.2 Estructura del Proyecto**
 
 
 
 
-    frontend/
+
+
     
-    ├── prototipos/
+    PrototipoInterfazCampeonato/    
+        ├──frontend/
+                                                                                                                                                                                                    ├── prototipos/
     
-        ├── ui-stitch/
+            ├── ui-stitch/
         
-           ├── calendario.html
+               ├── calendario.html
            
-           ├── contactoInformacion.html
+               ├── contactoInformacion.html
            
-           ├── equipos.html
+               ├── equipos.html
            
-           ├── estadisticas.html
+               ├── estadisticas.html
            
-           ├── faseFinal.html
+               ├── faseFinal.html
            
-           ├── grupoDescenso.html
+               ├── grupoDescenso.html
            
-           ├── inicio.html
+               ├── inicio.html
            
-           └── tablaPosiciones.html
+               └── tablaPosiciones.html
 
 
 
-3. Arquitectura del Sistema
+**3. Arquitectura del Sistema**
    
-   3.1 Tecnologías Utilizadas
+**3.1 Tecnologías Utilizadas**
 
-   * Frontend: HTML5, CSS3
+* Frontend: HTML5, CSS3
      
-   * JavaScript: Mínimo o nulo (solo para navegación entre vistas)
+* JavaScript: Mínimo o nulo (solo para navegación entre vistas)
      
-   * Tipo: Prototipo estático/mockup interactivo
+* Tipo: Prototipo estático/mockup interactivo
      
-   * Propósito: Validación de diseño UX/UI
+* Propósito: Validación de diseño UX/UI
 
 
    
-4.Vistas del Prototipo
+**4.Vistas del Prototipo**
 
 
-4.1 Vista Principal (inicio.html)
+**4.1 Vista Principal (inicio.html)**
 
 
 * Pantalla de inicio/dashboard
@@ -76,7 +77,7 @@ PrototipoInterfazCampeonato/
 * Vista general de campeonatos (datos de ejemplo)
 
 
-4.2 Vista de Equipos
+**4.2 Vista de Equipos**
 
 * Lista de equipos de ejemplo
   
@@ -84,7 +85,7 @@ PrototipoInterfazCampeonato/
   
 
 
-4.3 Vista de Calendario
+**4.3 Vista de Calendario**
 
 * Calendario visual de partidos
   
@@ -93,7 +94,7 @@ PrototipoInterfazCampeonato/
 * Diseño de fixture/calendario
 
 
-4.4 Vista Tabla de Posiciones
+**4.4 Vista Tabla de Posiciones**
 
 * Tabla de clasificación con datos estáticos
   
@@ -102,7 +103,7 @@ PrototipoInterfazCampeonato/
 * Elementos visuales (íconos, colores)
 
 
-5. Resultados Finales
+**5. Resultados Finales**
 
 
 <img width="1365" height="731" alt="Captura de pantalla 2025-12-03 050136" src="https://github.com/user-attachments/assets/ba48d7f5-dc19-4ae7-bd81-9b1097259509" />
