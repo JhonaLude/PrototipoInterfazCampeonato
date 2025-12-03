@@ -22,7 +22,7 @@ Página web que muestra la información relevante del Campeonato Nacional de Fú
 
 
 
-**2.2 Estructura del Proyecto**
+**3. Estructura del Proyecto**
 
     
     PrototipoInterfazCampeonato/    
