@@ -4,7 +4,7 @@ PrototipoInterfazCampeonato
 
 1. Descripción General
 
-Sistema de gestión de campeonatos deportivos que permite la administración de torneos, equipos, partidos y clasificaciones.
+Página web que muestra la información relevante del Campeonato Nacional de Fútbol Ecuatoriano (LigaPro Ecuabet).
 
 
 
