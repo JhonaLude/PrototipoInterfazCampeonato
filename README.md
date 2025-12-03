@@ -19,8 +19,11 @@ Sistema de gestión de campeonatos deportivos que permite la administración de 
 
 PrototipoInterfazCampeonato/
 
-├── frontend/
 
+
+
+    frontend/
+    
     ├── prototipos/
     
         ├── ui-stitch/
