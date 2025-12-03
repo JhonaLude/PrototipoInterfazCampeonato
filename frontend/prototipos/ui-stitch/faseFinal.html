@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase Final 2025 - LigaPro Ecuabet</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" crossorigin href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-4 md:px-10 py-3"
+                        role="banner">
+                        <div class="flex items-center gap-4 text-slate-900">
+                            <a href="#" class="flex items-center gap-3" aria-label="Inicio - LigaPro Ecuabet">
+                                <div class="size-6" aria-hidden="true">
+                                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6_330)">
+                                            <defs>
+                                                <clipPath id="clip0_6_330">
+                                                    <rect fill="white" height="48" width="48"></rect>
+                                                </clipPath>
+                                            </defs>
+                                    </svg>
+                                </div>
+                                <h2 class="text-slate-900 text-lg font-bold leading-tight tracking-[-0.015em]">LigaPro
+                                    Ecuabet</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-slate-600 hover:text-primary text-sm font-medium leading-normal"
+                                    href="#">Inicio</a>
+                                <a class="text-slate-600 hover:text-primary text-sm font-medium leading-normal"
+                                    href="#">Noticias</a>
+                                <a class="text-slate-600 hover:text-primary text-sm font-medium leading-normal"
+                                    href="#">Calendario</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="#">Fase Final 2025</a>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+                                    <span class="truncate">Login</span>
+                                </button>
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 text-slate-900 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-slate-300">
+                                    <span class="truncate">Sign Up</span>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="flex flex-col gap-8 mt-8">
+                        <div class="flex flex-wrap justify-between gap-3 p-4">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p class="text-slate-900 text-4xl font-black leading-tight tracking-[-0.033em]">Fase
+                                    Final 2025</p>
+                                <p class="text-slate-500 text-base font-normal leading-normal">Clasificación y
+                                    resultados recientes de la fase
+                                    final de la LigaPro Ecuabet.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+                            <div>
+                                <h2
+                                    class="text-slate-900 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-l-4 border-blue-500">
+                                    Primer Hexagonal</h2>
+                                <div class="px-4 py-3 @container">
+                                    <div class="flex overflow-hidden rounded-xl border border-slate-200 bg-white">
+                                        <table class="flex-1">
+                                            <thead>
+                                                <tr class="bg-slate-100">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-auto text-sm font-medium leading-normal">
+                                                        Equipo</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Puntos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Goles</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        1</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Independiente del Valle crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8rZzGq-J7PDTGhp56c2k2Fd1h551nbcPu6OM6zJ55d6mkR4JyyGy51_xzBIzO9ZdSwuGc4nkRU6kvIve6CxRU4va5f5b-W3j8S9zB2L6J4IR2v2wmCL7VcPmi7U80MmRB9m8DEBTb6fWFn_CebUbT4vYvgMebFsflLHaJY4weRcel0zai0rBgiJ9Z/s16000/Independiente%20del%20Valle.png" />
+                                                            <span class="text-slate-700 font-medium">Independiente del
+                                                                Valle</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        12</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +8</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        2</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="LDU Quito crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png" />
+                                                            <span class="text-slate-700 font-medium">LDU Quito</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        10</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +5</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        3</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Barcelona SC crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png" />
+                                                            <span class="text-slate-700 font-medium">Barcelona SC</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        9</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +3</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        4</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Universidad Católica crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCuUJIhX-ccoKjY_cqNcI3ehxDlEHFRMk8j84H0r6yAoerrsvBXWQZaDK8GxyJc2lVnacXUuHqZ7MCu9-xSRMj4QuDPKofu8JfI90gm2HDeTJwOBMGl2qPP_bRvlTKP1rMX7RKXfBcpd0/s1600/Universidad+Catolica.png" />
+                                                            <span class="text-slate-700 font-medium">Universidad Católica</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        7</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +1</td>
+                                                </tr>
+
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        5</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Libertad FC crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihXVitUxPmF-LAiTTkeKBjcaOtFjmtLqWN7H7DRklkLKizH0o-Ti6V-AqTOXIWshr6Od4d8EgTzyNetbWvxDAIvLT_wPE-PvTpP3yMcSLGqaL7bxYLIwDGVY_IzuDG4RvSDg-zKQxm61w/s16000/Libertad+Futbol+Club.png" />
+                                                            <span class="text-slate-700 font-medium">Libertad FC</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        7</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +1</td>
+                                                </tr>
+
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        6</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Orense SC crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha5mQfekZxcy2kNTy5WYAliiEdZLsVsBLDUIzYcuTT7x3tvm0JV2_q9vG7l5N4_U_nF8KpwWSiXcakmt1tVIjNL31Z3kDSmAST-owbRudr8uSVPV6xsmXBp9XG1KHuu2K6Dkrkx3dc-36U_-J03iaI_Vua_3S-YUz8m2MCmO4g9K1qRercbFClTrY30sA/s16000/Orense%20Sporting%20Club.png" />
+                                                            <span class="text-slate-700 font-medium">Orense SC</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        7</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2
+                                    class="text-slate-900 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-l-4 border-orange-500">
+                                    Segundo Hexagonal</h2>
+                                <div class="px-4 py-3 @container">
+                                    <div class="flex overflow-hidden rounded-xl border border-slate-200 bg-white">
+                                        <table class="flex-1">
+                                            <thead>
+                                                <tr class="bg-slate-100">
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Pos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-auto text-sm font-medium leading-normal">
+                                                        Equipo</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Puntos</th>
+                                                    <th
+                                                        class="px-4 py-3 text-left text-slate-600 w-20 text-sm font-medium leading-normal">
+                                                        Goles</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        1</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Macará crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmgEkL0CU2cwJispHgV8mgrReRudxH9BdXAW4rPj1dQbbTzLYz2DcwLnUDg_uEKJ-ry9r0Vnn8wifx8tNkQ9letFRYaW_GssgQyC6kXKUlVJplBp2bjP3dy0c0yL42NrYaAXugE11PlNQ/s1600/Club+Social+y+Deportivo+Macara.png" />
+                                                            <span
+                                                                class="text-slate-700 font-medium">Macará</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        15</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +12</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        2</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Aucas crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTUufwpfIuRIsriIboCBvfJ42VI0PnmWkaXT9i7IDKG-P1P0D2822cp8muYbBtkv7tDdRKji9hLLcpZa1FBtgntkpr_lz-b4AisEaMobQgeRxRHC8t7eXz6U_x9inUs0X3A3w4GIf7jWgbBsi8Ir0zW9aE6PZFiusSjjRrGxyFYHUy3t4ggK5aN-n5/s16000/Sociedad%20Deportiva%20Aucas.png" />
+                                                            <span class="text-slate-700 font-medium">Aucas</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        11</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +6</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        3</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Deportivo Cuenca crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhme9taQMqGXJTwFsz-EZr2iaJcvZOPVDVE3jqrbUzpm2zzHpFNKZQ3QlZWHaTgo64t-VtVTi9AzqZUes7KdXEi013SNYz4dGYZZs1WuC1X0PSgLJ8NMYX8G5Gt-i1dXKOlWdlBkDogwHsRG9es-dkWwP6w-lrqftAfCvf-MtvcrRXpUQfZ_ENg0cKI/s16000/Club%20Deportivo%20Cuenca.png" />
+                                                            <span class="text-slate-700 font-medium">Deportivo Cuenca</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        8</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +2</td>
+                                                </tr>
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        4</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Emelec crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EWV2Jlqg4Jp12xPHGFtcmmAIf6T9vRoCMHUycfhOgN3wVax8pzDv1mNkWbPYX7AFeMyyVeuUlZJzKrp2iO9BJ5MvVaJJlQm5YmuJqg_XgyT7cNNn3mvACgT-91P66qmqw1p5ZSe5ifqJ78aYjnVKKE36M2V7M81TNmDzOXpKAwzjnswzPQRxucmANSE/s16000/Club%20Sport%20Emelec.png" />
+                                                            <span class="text-slate-700 font-medium">Emelec</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        6</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        -3</td>
+                                                </tr>
+
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        5</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="El Nacional crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyY_Tth5Hi-ditS7yKm-NURcZSZq0H3FZQmpKH25BtcSK8_3rKv5v0rUDr5wMP9FEF3WRZ_Z0IrosY8dTXoF622NPxO31lhDijaTi2YXLPpW8PF9zeU2iyXVktYtMoh2yn06xEaVVlwZiyf0o1izheZDZIDqT-56EFfY7VrZY6sTt3oXaJ_LRy9vaQ4fk/s16000/CD%20El%20Nacional.png" />
+                                                            <span class="text-slate-700 font-medium">El Nacional</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        7</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +1</td>
+                                                </tr>
+
+                                                <tr class="border-t border-t-slate-200">
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        6</td>
+                                                    <td class="h-[72px] px-4 py-2 text-sm font-normal leading-normal">
+                                                        <div class="flex items-center gap-3">
+                                                            <img class="aspect-square rounded-full w-8 h-8 object-cover"
+                                                                data-alt="Delfin SC crest"
+                                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyN_3LDEkfPxA_y-_lacbYQtLrfHqQJLMuDnFP7GTvKq9wCdVHV17-ykbGUlpSltFif1DAKKjKGsDHYdH7TuCiD_sjFOAQjIwnF5wafxNJZxEKx-_Th4N4hi87g9zXNMnMKV4wXX7LR4PymZvuKVUSNtLjVulBo0Q5-50raY3giUdjOOgHKZgVNHWX/s16000/Delf%C3%ADn%20Sporting%20Club.png" />
+                                                            <span class="text-slate-700 font-medium">Delfin SC</span>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        7</td>
+                                                    <td
+                                                        class="h-[72px] px-4 py-2 text-slate-500 text-sm font-normal leading-normal">
+                                                        +1</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="px-4 mt-8">
+                            <h2
+                                class="text-slate-900 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                                Resultados Recientes</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-4">
+                                <div
+                                    class="bg-white rounded-xl p-6 border border-slate-200 flex flex-col items-center gap-4">
+                                    <span class="text-xs text-slate-500">24 Oct 2025 - Finalizado</span>
+                                    <div class="flex items-center justify-between w-full">
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="Emelec crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EWV2Jlqg4Jp12xPHGFtcmmAIf6T9vRoCMHUycfhOgN3wVax8pzDv1mNkWbPYX7AFeMyyVeuUlZJzKrp2iO9BJ5MvVaJJlQm5YmuJqg_XgyT7cNNn3mvACgT-91P66qmqw1p5ZSe5ifqJ78aYjnVKKE36M2V7M81TNmDzOXpKAwzjnswzPQRxucmANSE/s16000/Club%20Sport%20Emelec.png" />
+                                            <span class="text-sm font-medium text-slate-800 text-center">Emelec</span>
+                                        </div>
+                                        <div class="text-3xl font-bold text-slate-900">0 - 4</div>
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="Emelec crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png" />
+                                            <span class="text-sm font-medium text-slate-800 text-center">Barcelona SC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl p-6 border border-slate-200 flex flex-col items-center gap-4">
+                                    <span class="text-xs text-slate-500">23 Oct 2025 - Finalizado</span>
+                                    <div class="flex items-center justify-between w-full">
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="LDU Quito crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png" />
+                                            <span class="text-sm font-medium text-slate-800 text-center">LDU
+                                                Quito</span>
+                                        </div>
+                                        <div class="text-3xl font-bold text-slate-900">2 - 1</div>
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="Independiente del Valle crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8rZzGq-J7PDTGhp56c2k2Fd1h551nbcPu6OM6zJ55d6mkR4JyyGy51_xzBIzO9ZdSwuGc4nkRU6kvIve6CxRU4va5f5b-W3j8S9zB2L6J4IR2v2wmCL7VcPmi7U80MmRB9m8DEBTb6fWFn_CebUbT4vYvgMebFsflLHaJY4weRcel0zai0rBgiJ9Z/s16000/Independiente%20del%20Valle.png" />
+                                            <span
+                                                class="text-sm font-medium text-slate-800 text-center">Independiente</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl p-6 border border-slate-200 flex flex-col items-center gap-4">
+                                    <span class="text-xs text-slate-500">22 Oct 2025 - Finalizado</span>
+                                    <div class="flex items-center justify-between w-full">
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="Aucas crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTUufwpfIuRIsriIboCBvfJ42VI0PnmWkaXT9i7IDKG-P1P0D2822cp8muYbBtkv7tDdRKji9hLLcpZa1FBtgntkpr_lz-b4AisEaMobQgeRxRHC8t7eXz6U_x9inUs0X3A3w4GIf7jWgbBsi8Ir0zW9aE6PZFiusSjjRrGxyFYHUy3t4ggK5aN-n5/s16000/Sociedad%20Deportiva%20Aucas.png" />
+                                            <span class="text-sm font-medium text-slate-800 text-center">Aucas</span>
+                                        </div>
+                                        <div class="text-3xl font-bold text-slate-900">8 - 0</div>
+                                        <div class="flex flex-col items-center gap-2 w-1/3">
+                                            <img class="h-12 w-12" data-alt="Delfin SC crest"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyN_3LDEkfPxA_y-_lacbYQtLrfHqQJLMuDnFP7GTvKq9wCdVHV17-ykbGUlpSltFif1DAKKjKGsDHYdH7TuCiD_sjFOAQjIwnF5wafxNJZxEKx-_Th4N4hi87g9zXNMnMKV4wXX7LR4PymZvuKVUSNtLjVulBo0Q5-50raY3giUdjOOgHKZgVNHWX/s16000/Delf%C3%ADn%20Sporting%20Club.png" />
+                                            <span class="text-sm font-medium text-slate-800 text-center">Delfin
+                                                SC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

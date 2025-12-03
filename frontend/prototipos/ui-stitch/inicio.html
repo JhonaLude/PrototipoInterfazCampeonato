@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Liga Pro Ecuabet</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200/50 dark:border-gray-800/50">
+                <div
+                    class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto h-16">
+                    <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-2 text-gray-900 dark:text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_330)">
+                                        <path clip-rule="evenodd"
+                                            d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_6_330">
+                                            <rect fill="white" height="48" width="48"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold tracking-[-0.015em]">Liga Pro Ecuabet</h2>
+                        </div>
+                        <nav class="hidden md:flex items-center gap-6">
+                            <a class="text-gray-800 dark:text-gray-200 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Inicio</a>
+                            <a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Equipos</a>
+                            <a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Tabla</a>
+                            <a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Resultados</a>
+                            <a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Estadísticas</a>
+                            <a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Descenso</a>
+                        </nav>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+                            <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                                <div
+                                    class="text-gray-500 dark:text-gray-400 flex bg-gray-200/50 dark:bg-gray-800/50 items-center justify-center pl-3 rounded-l-lg border-r-0">
+                                    <span class="material-symbols-outlined !text-xl">search</span>
+                                </div>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-gray-200/50 dark:bg-gray-800/50 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal"
+                                    placeholder="Buscar..." value="" />
+                            </div>
+                        </label>
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-wide hover:bg-primary/90 transition-colors">
+                            <span class="truncate">Contacto</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section class="py-10 md:py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="relative @container">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 text-center"
+                                    data-alt="A dynamic image of a soccer stadium filled with cheering fans under bright lights, conveying the excitement of a match."
+                                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsJdp59Q7DJPsVVLEOC4gkfUuMKgvSmdnTau3kGOmMwrpZ5DEsbjgd4DQkd5CPzonXaKo3xPVdaiJPgz4GqDuHo6pCfxFeJGZXdRX7nhbTa0BI9-HMj26VroY6a1v9_GKx05s1oKgeU0677Udrj0S5MnuYNwXyKtopYOr6LS98g3SmHgVY9F2BLwY-yFezE5ueE2NKiBL5xmyYAXzy0kHulL2hpLs_4-wrqf6n9QcxPp9SvhM-65kHUbdt2WmrbkmP3AbwWl3Z9-XI");'>
+                                    <div class="flex flex-col gap-4 max-w-3xl">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-tighter @[480px]:text-6xl">
+                                            Serie A Ecuador 2025
+                                        </h1>
+                                        <p class="text-gray-200 text-base font-normal leading-relaxed @[480px]:text-lg">
+                                            La emoción del fútbol ecuatoriano está de vuelta. Sigue a tu equipo
+                                            favorito, revisa los últimos resultados y no te pierdas ni un solo partido
+                                            de la temporada.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-wrap gap-4 justify-center">
+                                        <button
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:bg-primary/90 transition-colors">
+                                            <span class="truncate">Ver Tabla</span>
+                                        </button>
+                                        <button
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white text-base font-bold tracking-wide hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+                                            <span class="truncate">Resultados</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-10 md:py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-gray-900 dark:text-white text-2xl md:text-3xl font-bold tracking-tight px-4 pb-6">
+                            Próximo Partido</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="rounded-xl bg-white dark:bg-gray-900/50 shadow-sm overflow-hidden border border-gray-200/50 dark:border-gray-800/50">
+                                <div class="p-6">
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm font-normal pb-4">Sábado, 25 de
+                                        Febrero, 19:00</p>
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex flex-col items-center gap-3 text-center">
+                                            <img alt="LDU Quito team logo" class="h-14 w-14"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png" />
+                                            <p class="text-gray-900 dark:text-white text-base font-bold">LDU Quito</p>
+                                        </div>
+                                        <span class="text-gray-400 dark:text-gray-500 text-xl font-bold">VS</span>
+                                        <div class="flex flex-col items-center gap-3 text-center">
+                                            <img alt="Barcelona SC team logo" class="h-14 w-14"
+                                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png" />
+                                            <p class="text-gray-900 dark:text-white text-base font-bold">Barcelona SC
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-t border-gray-200/50 dark:border-gray-800/50 text-center">
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Estadio Rodrigo Paz Delgado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-10 md:py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-gray-900 dark:text-white text-2xl md:text-3xl font-bold tracking-tight px-4 pb-6">
+                            Últimas Noticias</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="flex flex-col gap-4 rounded-xl bg-white dark:bg-gray-900/50 p-4 shadow-sm border border-gray-200/50 dark:border-gray-800/50">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                                    data-alt="Soccer players celebrating a goal on the field."
+                                    style='background-image: url("https://ecuador221.com.ec/wp-content/uploads/2025/04/el-nacional-celebra-primera-victoria-en-la-ligapro-2025.ecuador221.com_.ec_.jpeg");'>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Análisis de
+                                        la Jornada 5</p>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal line-clamp-2">
+                                        Un resumen de los momentos más destacados, los goles y las sorpresas de la
+                                        última fecha del campeonato.</p>
+                                    <a class="text-primary font-bold text-sm mt-2 hover:underline" href="#">Leer Más</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl bg-white dark:bg-gray-900/50 p-4 shadow-sm border border-gray-200/50 dark:border-gray-800/50">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                                    data-alt="A player in intense focus during a match, about to kick the ball."
+                                    style='background-image: url("https://image-service.onefootball.com/transform?w=840&h=630&dpr=2&image=https%3A%2F%2Fwww.aficioncentral.com%2Fmedia%2Fcache%2Fresolve%2Flg%2Fuploads%2Ffutbol-ecuatoriano%2F2024%2Fdiciembre%2Fligapro-trofeo.jpg");'>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Mercado de
+                                        Fichajes: Rumores y Confirmaciones</p>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal line-clamp-2">
+                                        Mantente al día con las últimas noticias sobre transferencias de jugadores entre
+                                        los equipos de la Serie A.</p>
+                                    <a class="text-primary font-bold text-sm mt-2 hover:underline" href="#">Leer Más</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl bg-white dark:bg-gray-900/50 p-4 shadow-sm border border-gray-200/50 dark:border-gray-800/50">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                                    data-alt="A coach giving instructions to his team on the sidelines."
+                                    style='background-image: url("https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0806%2Fr1528393_1080x608_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg");'>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Entrevista
+                                        Exclusiva con el DT de Emelec</p>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal line-clamp-2">
+                                        El director técnico comparte sus estrategias y expectativas para lo que resta de
+                                        la temporada 2025.</p>
+                                    <a class="text-primary font-bold text-sm mt-2 hover:underline" href="#">Leer Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-10 md:py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-gray-900 dark:text-white text-2xl md:text-3xl font-bold tracking-tight px-4 pb-6">
+                            Equipos Participantes</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="LDU Quito team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">LDU Quito
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="Barcelona SC team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">Barcelona
+                                    SC</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="Emelec team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EWV2Jlqg4Jp12xPHGFtcmmAIf6T9vRoCMHUycfhOgN3wVax8pzDv1mNkWbPYX7AFeMyyVeuUlZJzKrp2iO9BJ5MvVaJJlQm5YmuJqg_XgyT7cNNn3mvACgT-91P66qmqw1p5ZSe5ifqJ78aYjnVKKE36M2V7M81TNmDzOXpKAwzjnswzPQRxucmANSE/s16000/Club%20Sport%20Emelec.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">Emelec</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="Independiente del Valle team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8rZzGq-J7PDTGhp56c2k2Fd1h551nbcPu6OM6zJ55d6mkR4JyyGy51_xzBIzO9ZdSwuGc4nkRU6kvIve6CxRU4va5f5b-W3j8S9zB2L6J4IR2v2wmCL7VcPmi7U80MmRB9m8DEBTb6fWFn_CebUbT4vYvgMebFsflLHaJY4weRcel0zai0rBgiJ9Z/s16000/Independiente%20del%20Valle.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">
+                                    Independiente</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="Delfín SC team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyN_3LDEkfPxA_y-_lacbYQtLrfHqQJLMuDnFP7GTvKq9wCdVHV17-ykbGUlpSltFif1DAKKjKGsDHYdH7TuCiD_sjFOAQjIwnF5wafxNJZxEKx-_Th4N4hi87g9zXNMnMKV4wXX7LR4PymZvuKVUSNtLjVulBo0Q5-50raY3giUdjOOgHKZgVNHWX/s16000/Delf%C3%ADn%20Sporting%20Club.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">Delfín SC
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl bg-white dark:bg-gray-900/50 shadow-sm border border-gray-200/50 dark:border-gray-800/50 hover:shadow-md transition-shadow">
+                                <img alt="Aucas team logo" class="h-16 w-16"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyyJrbKvxU7LVyrzB1dmv_-dCSiQu_l6TtTMWUxXUEPYxW3L0QyyyLizmMchUQYkhBGuJUO8MwdaXwrayHenUz5a_bWbpsTf39FJDNBeIgJGOGpzbaEvvjN98ZjPBoKkOQexd1EJUbS0E/s1600/Sociedad+Deportiva+Aucas.png" />
+                                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold text-center">Aucas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-white dark:bg-gray-900/50 border-t border-gray-200/50 dark:border-gray-800/50">
+                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-center">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">© 2024 Serie A Ecuador. Todos los derechos
+                            reservados.</p>
+                        <div class="flex gap-4">
+                            <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Twitter</a>
+                            <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Facebook</a>
+                            <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

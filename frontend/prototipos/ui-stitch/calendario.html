@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Calendario y Resultados - LigaPro Ecuabet</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "neutral": {
+                            50: '#F9FAFB',
+                            100: '#F3F4F6',
+                            200: '#E5E7EB',
+                            300: '#D1D5DB',
+                            400: '#9CA3AF',
+                            500: '#6B7280',
+                            600: '#4B5563',
+                            700: '#374151',
+                            800: '#1F2937',
+                            900: '#111827',
+                        },
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-200 px-4 sm:px-10 py-3">
+                        <div class="flex items-center gap-4 text-neutral-900">
+                            <div class="size-6 text-primary">
+                                <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-2v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h2 class="text-neutral-900 text-lg font-bold leading-tight tracking-[-0.015em]">LigaPro
+                                Ecuabet</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-neutral-600 hover:text-neutral-900 text-sm font-medium leading-normal"
+                                    href="#">Inicio</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="#">Calendario</a>
+                                <a class="text-neutral-600 hover:text-neutral-900 text-sm font-medium leading-normal"
+                                    href="#">Tabla</a>
+                                <a class="text-neutral-600 hover:text-neutral-900 text-sm font-medium leading-normal"
+                                    href="#">Noticias</a>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+                                    <span class="truncate">Login</span>
+                                </button>
+                                <button
+                                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-neutral-100 hover:bg-neutral-200 text-neutral-600 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                                    <span class="material-symbols-outlined">dark_mode</span>
+                                </button>
+                            </div>
+                        </div>
+                        <button
+                            class="flex md:hidden max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-neutral-100 hover:bg-neutral-200 text-neutral-600 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </header>
+                    <div class="flex flex-wrap justify-between items-center gap-4 p-4 mt-8">
+                        <div class="flex flex-col gap-3">
+                            <p class="text-neutral-900 text-4xl font-black leading-tight tracking-[-0.033em]">Calendario
+                                y Resultados</p>
+                            <p class="text-neutral-500 text-base font-normal leading-normal">Sigue todos los partidos de
+                                la LigaPro Ecuabet</p>
+                        </div>
+                        <div class="flex w-full sm:w-auto max-w-[480px]">
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p class="text-neutral-700 text-sm font-medium leading-normal pb-2">Filtrar por equipo
+                                </p>
+                                <div class="relative">
+                                    <select
+                                        class="form-select appearance-none flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-700 focus:outline-0 focus:ring-0 border border-neutral-300 bg-white focus:border-primary h-12 placeholder:text-neutral-400 pl-4 pr-10 text-base font-normal leading-normal">
+                                        <option>Todos los equipos</option>
+                                        <option>Barcelona SC</option>
+                                        <option>Emelec</option>
+                                        <option>LDU Quito</option>
+                                        <option>Independiente del Valle</option>
+                                    </select>
+                                    <span
+                                        class="material-symbols-outlined text-neutral-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-3 relative">
+                        <div class="flex gap-3 overflow-x-auto pb-3 -mb-3">
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+                                <p class="text-white text-sm font-medium leading-normal">Jornada 1</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 2</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 3</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 4</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 5</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 6</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 7</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 8</p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-neutral-100 hover:bg-neutral-200 pl-4 pr-4">
+                                <p class="text-neutral-600 text-sm font-medium leading-normal">Jornada 9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 p-4">
+                        <div class="flex flex-col gap-4 rounded-xl bg-white border border-neutral-200 p-4 shadow-sm">
+                            <div class="flex justify-between items-center text-xs text-neutral-500">
+                                <span>Sábado 22 Feb, 2025</span>
+                                <span>Estadio Rodrigo Paz Delgado</span>
+                                <span>Finalizado</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-4 text-right justify-end w-2/5">
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">LDU
+                                        Quito</span>
+                                    <img class="size-10" data-alt="Liga de Quito club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hf0FxHrej9sDqW_PMaI6tYji01CNG4WOoloENJJNRGPX-4ubXeS9Hr4agxbNCyzX9fDdUaer8n0Yho2yfKs0PRGt9Kepi6zYPjhgyuQ2YqZzdfO6ba2QojrJf-z6wq8AxUEfWAVj_qu-sV_dKoUmVplV6zGcorcJKUUWPtkkfwvbzYfkPeN427urigE/s16000/LDU%20de%20Quito.png" />
+                                </div>
+                                <div class="text-neutral-900 text-3xl font-black">3 - 0</div>
+                                <div class="flex items-center gap-4 w-2/5">
+                                    <img class="size-10" data-alt="Barcelona SC club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiI1aCB5eRZPvsuNSunyhyphenhyphentO_oRzsUpbm1QE8xTN-S5si2jhQFzZ0OAvDtyNj56Hr2ZvT95Cg8b-memcKwrlv__H-LhCS0290SlY5oOs_ELyIRf8aoZn1PGUi4L5EvoO0Yq0HEycIFb-X1IhWwIu4ue3ZVxx3WxhB-avENOxgtm4K5DBTG8lHMfeRzJZw/s16000/Barcelona%20Sporting%20Club.png" />
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">Barcelona
+                                        SC</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-neutral-100 pt-4 flex justify-center">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-neutral-100 text-neutral-700 hover:bg-neutral-200 gap-2 text-sm font-medium leading-normal w-fit">
+                                    <span class="material-symbols-outlined text-base">bar_chart</span>
+                                    <span class="truncate">Ver Estadísticas</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-xl bg-white ring-2 ring-red-500/50 border border-neutral-200 p-4 shadow-sm">
+                            <div class="flex justify-between items-center text-xs text-neutral-500">
+                                <span>Sábado 22 Feb, 2025</span>
+                                <span>Estadio Reina del Cisne</span>
+                                <div class="flex items-center gap-2 text-red-500 font-bold">
+                                    <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+                                    <span>EN VIVO - 78'</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-4 text-right justify-end w-2/5">
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">Libertad
+                                        FC</span>
+                                    <img class="size-10" data-alt="Libertad FC club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihXVitUxPmF-LAiTTkeKBjcaOtFjmtLqWN7H7DRklkLKizH0o-Ti6V-AqTOXIWshr6Od4d8EgTzyNetbWvxDAIvLT_wPE-PvTpP3yMcSLGqaL7bxYLIwDGVY_IzuDG4RvSDg-zKQxm61w/s16000/Libertad+Futbol+Club.png" />
+                                </div>
+                                <div class="text-neutral-900 text-3xl font-black">2 - 2</div>
+                                <div class="flex items-center gap-4 w-2/5">
+                                    <img class="size-10" data-alt="Universidad Católica club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCuUJIhX-ccoKjY_cqNcI3ehxDlEHFRMk8j84H0r6yAoerrsvBXWQZaDK8GxyJc2lVnacXUuHqZ7MCu9-xSRMj4QuDPKofu8JfI90gm2HDeTJwOBMGl2qPP_bRvlTKP1rMX7RKXfBcpd0/s1600/Universidad+Catolica.png" />
+                                    <span class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">U.
+                                        Católica</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-neutral-100 pt-4 flex justify-center">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-neutral-100 text-neutral-700 hover:bg-neutral-200 gap-2 text-sm font-medium leading-normal w-fit">
+                                    <span class="material-symbols-outlined text-base">bar_chart</span>
+                                    <span class="truncate">Ver Estadísticas</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl bg-white border border-neutral-200 p-4 shadow-sm">
+                            <div class="flex justify-between items-center text-xs text-neutral-500">
+                                <span>Domingo 23 Feb, 2025</span>
+                                <span>Estadio Banco Guayaquil</span>
+                                <span>Programado</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-4 text-right justify-end w-2/5">
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">Independiente
+                                        del Valle</span>
+                                    <img class="size-10" data-alt="Independiente del Valle club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8rZzGq-J7PDTGhp56c2k2Fd1h551nbcPu6OM6zJ55d6mkR4JyyGy51_xzBIzO9ZdSwuGc4nkRU6kvIve6CxRU4va5f5b-W3j8S9zB2L6J4IR2v2wmCL7VcPmi7U80MmRB9m8DEBTb6fWFn_CebUbT4vYvgMebFsflLHaJY4weRcel0zai0rBgiJ9Z/s16000/Independiente%20del%20Valle.png" />
+                                </div>
+                                <div class="text-neutral-900 text-2xl font-bold">16:00</div>
+                                <div class="flex items-center gap-4 w-2/5">
+                                    <img class="size-10" data-alt="Aucas club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyyJrbKvxU7LVyrzB1dmv_-dCSiQu_l6TtTMWUxXUEPYxW3L0QyyyLizmMchUQYkhBGuJUO8MwdaXwrayHenUz5a_bWbpsTf39FJDNBeIgJGOGpzbaEvvjN98ZjPBoKkOQexd1EJUbS0E/s1600/Sociedad+Deportiva+Aucas.png" />
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">Aucas</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-neutral-100 pt-4 flex justify-center">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-neutral-100 text-neutral-400 cursor-not-allowed gap-2 text-sm font-medium leading-normal w-fit">
+                                    <span class="material-symbols-outlined text-base">bar_chart</span>
+                                    <span class="truncate">Ver Estadísticas</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl bg-white border border-neutral-200 p-4 shadow-sm">
+                            <div class="flex justify-between items-center text-xs text-neutral-500">
+                                <span>Domingo 23 Feb, 2025</span>
+                                <span>Estadio Bellavista</span>
+                                <span>Programado</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-4 text-right justify-end w-2/5">
+                                    <span
+                                        class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">Técnico
+                                        Universitario</span>
+                                    <img class="size-10" data-alt="Técnico Universitario club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXb6_2NfMtaupZovQ5979-z_v_H7RHuquIgiNhR4AwXpGo1ZgY9sfof3rrMy-MLD1MbjHcJPSLefQwl50__0hvMV0ihh-b8S82tETZK6skt87XjTgnaBYMHjaTRdYDpbXWkIHyJn3nifmrJ2foLtR49nibBD-9mg3zccFHPmHy-8lUUgRxU1llGOr1V6M/s16000/T%C3%A9cnico%20Universitario.png" />
+                                </div>
+                                <div class="text-neutral-900 text-2xl font-bold">18:30</div>
+                                <div class="flex items-center gap-4 w-2/5">
+                                    <img class="size-10" data-alt="El Nacional club shield"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyY_Tth5Hi-ditS7yKm-NURcZSZq0H3FZQmpKH25BtcSK8_3rKv5v0rUDr5wMP9FEF3WRZ_Z0IrosY8dTXoF622NPxO31lhDijaTi2YXLPpW8PF9zeU2iyXVktYtMoh2yn06xEaVVlwZiyf0o1izheZDZIDqT-56EFfY7VrZY6sTt3oXaJ_LRy9vaQ4fk/s16000/CD%20El%20Nacional.png" />
+                                    <span class="text-neutral-800 text-base font-bold leading-tight hidden sm:inline">El
+                                        Nacional</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-neutral-100 pt-4 flex justify-center">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-neutral-100 text-neutral-400 cursor-not-allowed gap-2 text-sm font-medium leading-normal w-fit">
+                                    <span class="material-symbols-outlined text-base">bar_chart</span>
+                                    <span class="truncate">Ver Estadísticas</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
