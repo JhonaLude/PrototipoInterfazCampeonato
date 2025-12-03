@@ -16,7 +16,9 @@ Sistema de gestión de campeonatos deportivos que permite la administración de 
 
 
 2.2 Estructura del Proyecto
+
 PrototipoInterfazCampeonato/
+
 ├── frontend/
 
     ├── prototipos/
